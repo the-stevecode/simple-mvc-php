@@ -1,0 +1,21 @@
+# Ignorar archivo de variables de entorno
+.env
+
+# Ignorar archivos de logs
+/logs/*.log
+/public/php-error.log
+
+# Ignorar archivos temporales y caches
+*.log
+*.cache
+*.tmp
+*.swp
+
+# Ignorar archivos de configuración local de IDEs y editores
+/.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+
+# Ignorar archivos compilados o temporales PHP
+*.php~

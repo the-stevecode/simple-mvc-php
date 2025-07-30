@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# No apliques si ya estamos dentro de /public
+RewriteCond %{REQUEST_URI} !^/public/
+
+# Redirige todo a /public conservando la URI
+RewriteRule ^(.*)$ public/$1 [L,QSA]

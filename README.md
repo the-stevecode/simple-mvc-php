@@ -17,6 +17,7 @@ Este proyecto es una plantilla base para construir aplicaciones PHP utilizando e
 /public                → Raíz del sitio (index.php, CSS, JS, imágenes)
 /logs                  → Carpeta sugerida para logs (vacía)
 /README.md             → Este archivo
+/.env                  → Archivo de configuración de variables de entorno
 ```
 
 ---
@@ -28,6 +29,39 @@ Este proyecto es una plantilla base para construir aplicaciones PHP utilizando e
 3. Configura tus credenciales en `/config/config.php`.
 4. Asegúrate de tener habilitado `mod_rewrite` (si usas Apache).
 5. Accede a `http://localhost/` o el dominio que hayas configurado.
+
+---
+
+## ⚙️ Configuración del archivo `.env`
+
+Este proyecto utiliza un archivo `.env` para configurar parámetros esenciales según tu entorno. Modifica estos valores para que coincidan con tu entorno local o producción:
+
+| Variable       | Descripción                                      | Ejemplo                        |
+|----------------|-------------------------------------------------|-------------------------------|
+| `APP_ENV`      | Define el entorno de la aplicación.             | `development` o `production`  |
+| `APP_DEBUG`    | Activa o desactiva la visualización de errores. | `true` para mostrar errores, `false` para ocultarlos |
+| `APP_TIMEZONE` | Configura la zona horaria para fechas y horas.  | `America/La_Paz`               |
+| `DB_HOST`      | Dirección del servidor de base de datos.         | `localhost` o IP/URL           |
+| `DB_NAME`      | Nombre de la base de datos a utilizar.           | `dbapi`                       |
+| `DB_USER`      | Usuario con acceso a la base de datos.           | `root`                        |
+| `DB_PASS`      | Contraseña del usuario de la base de datos.      | (tu contraseña)                |
+| `DB_CHARSET`   | Juego de caracteres para la conexión a la base. | `utf8mb4`                     |
+
+---
+
+### Ejemplo mínimo de `.env` para desarrollo:
+
+```
+APP_ENV=development
+APP_DEBUG=true
+APP_TIMEZONE=America/La_Paz
+
+DB_HOST=localhost
+DB_NAME=dbapi
+DB_USER=root
+DB_PASS=
+DB_CHARSET=utf8mb4
+```
 
 ---
 

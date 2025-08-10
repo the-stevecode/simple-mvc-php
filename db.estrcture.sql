@@ -4,9 +4,9 @@
 -- collation="utf8_general_ci"
 -- charset="utf8"
 
-CREATE database IF NOT EXISTS `dbapi` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE database IF NOT EXISTS `dbmvc` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-use `dbapi`;
+use `dbmvc`;
 
 -- table name="user"
 CREATE TABLE `user` (

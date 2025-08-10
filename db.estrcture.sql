@@ -1,10 +1,10 @@
 
 -- database -- 
--- name="dbapi"
--- collation="utf8_general_ci"
+-- name="mvc"
+-- collation="utf8mb4_general_ci"
 -- charset="utf8"
 
-CREATE database IF NOT EXISTS `dbmvc` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE database IF NOT EXISTS `dbmvc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 use `dbmvc`;
 
@@ -21,8 +21,8 @@ CREATE TABLE `user` (
     PRIMARY KEY (`id`),
     UNIQUE KEY `email` (`email`),
     UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `username`, `password`, `registration_date`, `active`) VALUES
+INSERT INTO `user` (`first_name`, `last_name`, `email`, `username`, `password`, `registration_date`, `active`) VALUES
 ('STEVE', 'R', 'steve@g.com', 'steve', '$2y$10$cndiUJiBOaRn2D4fErXS9eUXBLIY7GJh4xT9nNG33ximEFt0PAIFC', '2023-09-25 14:06:17', 1),
 (NULL, NULL, 'tt@ejemplo.com', 'tt', '$2y$10$JXZU1e2GpntZinISWyLmyOqfwwXDMIEwlbD8hbeVN4Jt35U6ZMZN2', '2025-07-30 02:58:27', 1);

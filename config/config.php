@@ -33,7 +33,5 @@ if (APP_ENV === 'development') {
 
 // Configurar log de errores
 ini_set("error_log", __DIR__ . "/../logs/php-error.log");
-echo URL;
 // Zona horaria
 date_default_timezone_set(APP_TIMEZONE);
-

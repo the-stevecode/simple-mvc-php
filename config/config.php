@@ -22,13 +22,16 @@ define('DB_PASS', $_ENV['DB_PASS'] ?? '');
 define('DB_CHARSET', $_ENV['DB_CHARSET'] ?? 'utf8mb4');
 
 // Configuración de errores según entorno
-if (APP_ENV === 'development') {
+if (APP_ENV === 'development' && APP_DEBUG) {
+    // Mostrar todos los errores y warnings, incluyendo errores de arranque
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
 } else {
+    // En producción o si debug está desactivado, ocultar errores
     error_reporting(0);
     ini_set('display_errors', 0);
+    ini_set('display_startup_errors', 0);
 }
 
 // Configurar log de errores

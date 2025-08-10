@@ -2,7 +2,6 @@
 .env
 
 # Ignorar archivos de logs
-/logs/*.log
 /public/php-error.log
 
 # Ignorar archivos temporales y caches

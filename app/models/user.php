@@ -191,3 +191,4 @@ class UserModel extends Model
         $this->isActive = $isActive;
     }
 }
+?>

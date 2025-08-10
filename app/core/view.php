@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Clase View
  * Controlador de vistas dentro del patrón MVC. 
@@ -70,3 +69,4 @@ class View
         }
     }
 }
+?>

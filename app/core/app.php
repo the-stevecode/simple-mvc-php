@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Clase App
  * Controla la carga dinámica del controlador, método y parámetros desde la URL.
@@ -66,3 +65,4 @@ class App
         return []; // importante: devolver arreglo vacío si no hay URL
     }
 }
+?>

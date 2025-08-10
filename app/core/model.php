@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Clase Model
  * Clase base para los modelos dentro del patrón MVC.
@@ -38,3 +37,4 @@ class Model
         return $this->pdo->prepare($query);
     }
 }
+?>

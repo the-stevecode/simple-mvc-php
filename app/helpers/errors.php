@@ -1,5 +1,4 @@
 <?php
-
 class Errors
 {
     const ERROR_LOGIN_AUTHENTICATE = "44d54e16f2bb9bfaf690aa67b2e83c61"; // 'LOGIN_AUTHENTICATE'

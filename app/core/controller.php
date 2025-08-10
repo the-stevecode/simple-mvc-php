@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Clase Controller
  * Controlador base que maneja la carga de modelos, vistas y la gestión de parámetros HTTP.
@@ -137,3 +136,4 @@ class Controller
         exit;
     }
 }
+?>

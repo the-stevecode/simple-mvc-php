@@ -5,3 +5,4 @@ function dd($variable) {
     echo '</pre>';
     die();
 }
+?>

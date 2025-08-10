@@ -24,3 +24,4 @@ class SecureController extends Controller
         //$this->user = $userModel->getById($this->session->get('user_id'));
     }
 }
+?>

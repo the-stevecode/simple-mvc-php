@@ -5,3 +5,4 @@ class ErrorController extends Controller {
         $this->view->render('errors/404');
     }
 }
+?>

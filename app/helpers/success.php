@@ -1,5 +1,4 @@
 <?php
-
 class Success
 {
     const SUCCESS_USER_REGISTERED = "2f4f7c3790e9f9d0e3c8f45bd345d7a5";
@@ -23,3 +22,4 @@ class Success
         return array_key_exists($key, $this->successList);
     }
 }
+?>

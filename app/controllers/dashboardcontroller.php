@@ -9,3 +9,4 @@ class DashboardController extends SecureController
         $this->view->render('dashboard/index', ['user'=>$this->user]);
     }
 }
+?>

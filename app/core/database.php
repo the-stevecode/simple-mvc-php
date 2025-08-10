@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Clase Database
  * Se encarga de establecer la conexión PDO a la base de datos MySQL usando constantes de configuración.
@@ -42,3 +41,4 @@ class Database
         }
     }
 }
+?>

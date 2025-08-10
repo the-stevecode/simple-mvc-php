@@ -2,7 +2,7 @@
 -- database -- 
 -- name="mvc"
 -- collation="utf8mb4_general_ci"
--- charset="utf8"
+-- charset="utf8mb4"
 
 CREATE database IF NOT EXISTS `dbmvc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 

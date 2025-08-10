@@ -42,7 +42,7 @@ Este proyecto utiliza un archivo `.env` para configurar parámetros esenciales s
 | `APP_DEBUG`    | Activa o desactiva la visualización de errores. | `true` para mostrar errores, `false` para ocultarlos |
 | `APP_TIMEZONE` | Configura la zona horaria para fechas y horas.  | `America/La_Paz`               |
 | `DB_HOST`      | Dirección del servidor de base de datos.         | `localhost` o IP/URL           |
-| `DB_NAME`      | Nombre de la base de datos a utilizar.           | `dbapi`                       |
+| `DB_NAME`      | Nombre de la base de datos a utilizar.           | `dbapp`                       |
 | `DB_USER`      | Usuario con acceso a la base de datos.           | `root`                        |
 | `DB_PASS`      | Contraseña del usuario de la base de datos.      | (tu contraseña)                |
 | `DB_CHARSET`   | Juego de caracteres para la conexión a la base. | `utf8mb4`                     |
@@ -57,7 +57,7 @@ APP_DEBUG=true
 APP_TIMEZONE=America/La_Paz
 
 DB_HOST=localhost
-DB_NAME=dbapi
+DB_NAME=dbapp
 DB_USER=root
 DB_PASS=
 DB_CHARSET=utf8mb4

@@ -40,11 +40,12 @@ Este proyecto utiliza un archivo `.env` para configurar parámetros esenciales s
 |----------------|-------------------------------------------------|-------------------------------|
 | `APP_ENV`      | Define el entorno de la aplicación.             | `development` o `production`  |
 | `APP_DEBUG`    | Activa o desactiva la visualización de errores. | `true` para mostrar errores, `false` para ocultarlos |
-| `APP_TIMEZONE` | Configura la zona horaria para fechas y horas.  | `America/La_Paz`               |
-| `DB_HOST`      | Dirección del servidor de base de datos.         | `localhost` o IP/URL           |
-| `DB_NAME`      | Nombre de la base de datos a utilizar.           | `dbapp`                       |
-| `DB_USER`      | Usuario con acceso a la base de datos.           | `root`                        |
-| `DB_PASS`      | Contraseña del usuario de la base de datos.      | (tu contraseña)                |
+| `APP_TIMEZONE` | Configura la zona horaria para fechas y horas.  | `America/La_Paz`              |
+| `DB_HOST`      | Dirección del servidor de base de datos.        | `localhost` o IP/URL         |
+| `DB_PORT`      | Puerto del servidor de base de datos.           | `3306`                       |
+| `DB_NAME`      | Nombre de la base de datos a utilizar.          | `dbapp`                      |
+| `DB_USER`      | Usuario con acceso a la base de datos.          | `root`                       |
+| `DB_PASS`      | Contraseña del usuario de la base de datos.     | (tu contraseña)              |
 | `DB_CHARSET`   | Juego de caracteres para la conexión a la base. | `utf8mb4`                     |
 
 ---
@@ -57,6 +58,7 @@ APP_DEBUG=true
 APP_TIMEZONE=America/La_Paz
 
 DB_HOST=localhost
+DB_PORT=3306
 DB_NAME=dbapp
 DB_USER=root
 DB_PASS=

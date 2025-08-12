@@ -16,6 +16,7 @@ define('APP_DEBUG', filter_var($_ENV['APP_DEBUG'] ?? false, FILTER_VALIDATE_BOOL
 define('APP_TIMEZONE', $_ENV['APP_TIMEZONE'] ?? 'America/La_Paz');
 
 define('DB_HOST', $_ENV['DB_HOST'] ?? 'localhost');
+define('DB_PORT', $_ENV['DB_PORT'] ?? '3306');
 define('DB_NAME', $_ENV['DB_NAME'] ?? 'dbapi');
 define('DB_USER', $_ENV['DB_USER'] ?? 'root');
 define('DB_PASS', $_ENV['DB_PASS'] ?? '');

@@ -23,13 +23,12 @@ class App
         // 1. Determinar el nombre del controlador
         $controllerName = isset($url[0]) ? ucfirst($url[0]) . 'Controller' : $this->controllerDefault;
         unset($url[0]);
-
-        $controllerFile = '../app/controllers/' . strtolower($controllerName) . '.php';
+        $controllerFile = '../app/controllers/' . $controllerName . '.php';
 
         // 2. Si el controlador no existe, usamos ErrorController
         if (!file_exists($controllerFile)) {
             $controllerName = 'ErrorController';
-            $controllerFile = '../app/controllers/errorcontroller.php';
+            $controllerFile = '../app/controllers/ErrorController.php';
         }
 
         require_once $controllerFile;

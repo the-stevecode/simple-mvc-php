@@ -23,7 +23,7 @@ class Controller
     protected function loadModel(string $model): void
     {
         // Ruta al modelo (ajusta según tu estructura real)
-        $path = __DIR__ . '/../models/' . strtolower($model) . '.php';
+        $path = __DIR__ . '/../models/' . ucfirst($model) . 'Model.php';
 
         if (file_exists($path)) {
             require_once $path;

@@ -28,7 +28,7 @@ class App
         // 2. Si el controlador no existe, usamos ErrorController
         if (!file_exists($controllerFile)) {
             $controllerName = 'ErrorController';
-            $controllerFile = '../app/controllers/ErrorController.php';
+            $controllerFile = '../app/core/ErrorController.php';
         }
 
         require_once $controllerFile;

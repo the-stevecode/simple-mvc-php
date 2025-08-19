@@ -90,4 +90,3 @@ class AuthController extends Controller
         $this->redirect('auth');
     }
 }
-?>
